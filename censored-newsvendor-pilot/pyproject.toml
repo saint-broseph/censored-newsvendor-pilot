@@ -1,0 +1,13 @@
+[project]
+name = "censored-newsvendor-pilot"
+version = "0.1.0"
+description = "Robust newsvendor under censored demand with an AI forecast as a weak shadow variable"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
